@@ -7,6 +7,15 @@
   pointer-events: none;
 }
 
+img {
+  height: 10vh;
+  width: 10vw;
+}
+
+button {
+  background-color: #941111e4;
+}
+
 .flex {
   display: flex;
   justify-content: center;

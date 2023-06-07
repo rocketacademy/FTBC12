@@ -1,16 +1,17 @@
 import "./App.css";
 import React from "react";
+
+// Components
 import Greeting from "./Components/ExampleClassBasedComponent";
 import Form, { backendURL } from "./Components/Form";
 import { Button } from "react-bootstrap";
 import API from "./Components/API";
 import EventHandler from "./Components/EventHandler";
 import "react-calendar/dist/Calendar.css";
-
 import FormSpree from "./Components/FormSpree";
-
 import Calendar from "react-calendar";
 
+// App is a class based React Component
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -20,7 +21,7 @@ class App extends React.Component {
     };
   }
 
-  //  define function
+  //  define function that returns jsx
   displayName(name) {
     return (
       <div>
@@ -29,6 +30,7 @@ class App extends React.Component {
     );
   }
 
+  // life cycle methods
   componentDidMount() {
     console.log("I am running");
   }
@@ -68,8 +70,8 @@ class App extends React.Component {
 
           {/* {backendURL}  */}
 
-          {/* <API /> */}
-          <Form />
+          <API />
+          {/* <Form /> */}
         </header>
       </div>
     );
