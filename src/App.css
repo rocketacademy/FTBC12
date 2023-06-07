@@ -14,6 +14,7 @@ img {
 
 button {
   background-color: #941111e4;
+  border-radius: 25px !important;
 }
 
 .flex {

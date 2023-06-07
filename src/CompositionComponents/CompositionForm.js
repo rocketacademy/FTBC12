@@ -21,6 +21,18 @@ export default class CompositionForm extends React.Component {
     });
   };
 
+  handleSubmit = () => {
+    alert(
+      `${this.state.email}, ${this.state.password}, ${this.state.phone}, ${this.state.age}`
+    );
+    this.setState({
+      email: "",
+      password: "",
+      phone: "",
+      age: 0,
+    });
+  };
+
   render() {
     return (
       <div>
@@ -45,8 +57,15 @@ export default class CompositionForm extends React.Component {
           placeholder="Phone Number here please"
           value={this.state.phone}
         />
+        <Input
+          name="age"
+          type="number"
+          handleChange={this.handleChange}
+          placeholder="Age here please"
+          value={this.state.age}
+        />
         <Button
-          onClick={this.handleClick}
+          onClick={this.handleSubmit}
           image={<img src={Pinapple} alt="RA" />}
         >
           Submit

@@ -46,11 +46,18 @@ class App extends React.Component {
           </Button>
 
           <Button
-            onClick={this.handleClick}
+            onClick={this.handleClick1}
             image={<img src={Banana} alt="RA" />}
           >
             Press me
           </Button>
+
+          <Button>
+            {" "}
+            <p>I am a child!</p>
+          </Button>
+
+          <Button onClick={this.handleClick}>testing button</Button>
 
           <SplitSection child1={<API />} child2={<EventHandler />} />
 
